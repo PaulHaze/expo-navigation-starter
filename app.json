@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-router-starter",
-    "slug": "expo-router-starter",
+    "name": "expo-navigation-starter",
+    "slug": "expo-navigation-starter",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
