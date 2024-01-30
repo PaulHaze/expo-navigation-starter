@@ -1,18 +1,18 @@
 /* eslint-disable react-native/sort-styles */
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, SafeAreaView, Text } from 'react-native';
 
 import { BASE } from '@/styles/globalStyles';
 
 export function HomeScreen() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={[styles.headerText, styles.textColor]}>
         Bare Bones Home Screen
       </Text>
       <Text style={styles.textColor}>Delete this and start building</Text>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 

@@ -1,17 +1,5 @@
-import { StyleSheet, SafeAreaView } from 'react-native';
-
-import { HomeScreen } from '@/screens/Home';
+import { MainNavigator } from '@/navigation/MainNavigator';
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <HomeScreen />
-    </SafeAreaView>
-  );
+  return <MainNavigator />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
