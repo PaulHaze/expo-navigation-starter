@@ -3,13 +3,10 @@ import { StyleSheet, SafeAreaView, Text } from 'react-native';
 
 import { BASE } from '@/styles/globalStyles';
 
-export function HomeScreen() {
+export function ScreenTwo() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={[styles.headerText, styles.textColor]}>
-        Bare Bones Home Screen
-      </Text>
-      <Text style={styles.textColor}>Delete this and start building</Text>
+      <Text style={[styles.headerText, styles.textColor]}>Screen Two</Text>
     </SafeAreaView>
   );
 }
