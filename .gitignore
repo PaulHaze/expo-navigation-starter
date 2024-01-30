@@ -1,5 +1,9 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
+apps/*/credentials.json
+apps/*/build
+packages/*/build
+
 # dependencies
 node_modules/
 

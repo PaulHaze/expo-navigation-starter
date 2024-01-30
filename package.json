@@ -9,14 +9,25 @@
     "web": "expo start --web",
     "ts:check": "tsc"
   },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/*",
+        "expo-modules-*",
+        "typescript"
+      ]
+    }
+  },
   "dependencies": {
+    "@react-navigation/native": "^6.1.9",
     "@types/react": "~18.2.48",
     "expo": "50.0.4",
     "expo-status-bar": "~1.11.1",
+    "metro-cache": "^0.80.5",
     "react": "18.2.0",
     "react-native": "0.73.3",
-    "typescript": "^5.3.3",
-    "react-native-reanimated": "~3.6.2"
+    "react-native-reanimated": "~3.6.2",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
