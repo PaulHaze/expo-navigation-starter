@@ -3,7 +3,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { HomeScreen, ScreenTwo } from '@/screens';
 
-const HomeStack = createNativeStackNavigator();
+export type HomeStackParamList = {
+  Home: undefined;
+  Two: undefined;
+};
+
+const HomeStack = createNativeStackNavigator<HomeStackParamList>();
 const HomeStackScreens = () => (
   <HomeStack.Navigator initialRouteName="Home">
     <HomeStack.Screen

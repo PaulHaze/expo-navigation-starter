@@ -1,12 +1,18 @@
 /* eslint-disable react-native/sort-styles */
-import { StyleSheet, SafeAreaView, Text } from 'react-native';
+import { StyleSheet, SafeAreaView, Text, Button } from 'react-native';
+
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import type { HomeStackParamList } from '@/navigation/MainNavigator';
 
 import { BASE } from '@/styles/globalStyles';
 
-export function ScreenTwo() {
+type Props = NativeStackScreenProps<HomeStackParamList, 'Two'>;
+
+export function ScreenTwo({ navigation }: Props) {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={[styles.headerText, styles.textColor]}>Screen Two</Text>
+      <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
     </SafeAreaView>
   );
 }
