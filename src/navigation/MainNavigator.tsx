@@ -1,12 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import type { HomeStackParamList } from './navigationTypes';
 
-import { HomeScreen, ScreenTwo } from '@/screens';
-
-export type HomeStackParamList = {
-  Home: undefined;
-  Two: undefined;
-};
+import { HomeScreen } from '@/screens';
 
 const HomeStack = createNativeStackNavigator<HomeStackParamList>();
 const HomeStackScreens = () => (
@@ -14,9 +10,8 @@ const HomeStackScreens = () => (
     <HomeStack.Screen
       name="Home"
       component={HomeScreen}
-      options={{ title: 'Overview' }}
+      options={{ title: 'Custom Title' }}
     />
-    <HomeStack.Screen name="Two" component={ScreenTwo} />
   </HomeStack.Navigator>
 );
 

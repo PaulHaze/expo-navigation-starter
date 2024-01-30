@@ -1,23 +1,19 @@
 /* eslint-disable react-native/sort-styles */
-import { StyleSheet, SafeAreaView, Text, Button } from 'react-native';
-import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import type { HomeStackParamList } from '@/navigation/MainNavigator';
+import { StyleSheet, SafeAreaView, Text } from 'react-native';
+// import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+// import type { HomeStackParamList } from '@/navigation/navigationTypes';
 
 import { BASE } from '@/styles/globalStyles';
 
-type Props = NativeStackScreenProps<HomeStackParamList, 'Home'>;
+// type Props = NativeStackScreenProps<HomeStackParamList, 'Home'>;
 
-export function HomeScreen({ navigation }: Props) {
+export function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={[styles.headerText, styles.textColor]}>
         Bare Bones Home Screen
       </Text>
       <Text style={styles.textColor}>Delete this and start building</Text>
-      <Button
-        title="Go to Screen Two"
-        onPress={() => navigation.navigate('Two')}
-      />
     </SafeAreaView>
   );
 }
